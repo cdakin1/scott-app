@@ -2,34 +2,48 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import { TabNavigator } from 'react-navigation'; // 1.0.0-beta.14
 import Ionicons from 'react-native-vector-icons/Ionicons'; // Supported builtin module
+import Header from "./views/Header";
 import Home from "./views/Home";
+import Profile from "./views/Profile";
+import News from "./views/News";
+import MarketData from "./views/MarketData";
+import Contact from "./views/Contact";
+import Podcast from "./views/Podcast";
 
 const HomeScreen = () => (
-    <Home />
+    <View>
+        <Header title="Home" />
+        <Home />
+    </View>
 );
 const ProfileScreen = () => (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Profile Screen</Text>
+    <View>
+        <Header title="Profile" />
+        <Profile />
     </View>
 );
 const NewsScreen = () => (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>News Screen</Text>
+    <View>
+        <Header title="News" />
+        <News />
     </View>
 );
 const MarketDataScreen = () => (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Market Data Screen</Text>
+    <View>
+        <Header title="Market Data" />
+        <MarketData />
     </View>
 );
 const ContactScreen = () => (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Contact Screen</Text>
+    <View>
+        <Header title="Contact" />
+        <Contact />
     </View>
 );
 const PodcastScreen = () => (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Podcast Screen</Text>
+    <View>
+        <Header title="Podcast" />
+        <Podcast />
     </View>
 );
 
